@@ -79,8 +79,8 @@ class _PoseDetectorViewState extends State<PoseDetectorView_arm_circles> {
     while (_running) {
       await Future<void>.delayed(const Duration(seconds: 1));
       if (playTime >= 60) {
-        if (true) {
-          // if (poseReps >= 20) {
+        // if (true) {
+          if (poseReps >= 20) {
           _running = false;
           assetsAudioPlayer.stop();
 

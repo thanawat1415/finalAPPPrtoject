@@ -136,9 +136,9 @@ class _mildScreenState extends State<mildScreen> {
               child: Container(
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  // borderRadius: BorderRadius.only(
-                  //   topRight: Radius.circular(60),
-                  // ),
+                  borderRadius: BorderRadius.only(
+                    topRight: Radius.circular(60),
+                  ),
                 ),
                 child: Column(
                   children: [
@@ -220,9 +220,7 @@ class _mildScreenState extends State<mildScreen> {
               child: Container(
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.only(
-                    topRight: Radius.circular(60),
-                  ),
+                  
                 ),
                 child: Column(
                   children: [

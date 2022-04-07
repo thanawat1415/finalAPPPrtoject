@@ -118,8 +118,8 @@ class _PoseDetectorViewState extends State<PoseDetectorView_elbow_plank> {
     while (_running) {
       await Future<void>.delayed(const Duration(seconds: 1));
       if (playTime >= 30) {
-        if (true) {
-          // if (poseReps >= 0) {
+        // if (true) {
+          if (poseReps >= 0) {
           _running = false;
           assetsAudioPlayer.stop();
 
@@ -139,7 +139,7 @@ class _PoseDetectorViewState extends State<PoseDetectorView_elbow_plank> {
           // sum time send to next class
           playTime += widget.getplaytime;
           // playTime = 20;
-          _sumScore = 181;
+          // _sumScore = 181;
 
           num sumplayTime = playTime;
 

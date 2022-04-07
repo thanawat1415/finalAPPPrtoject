@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:mobile_final/Games/games_model/01_warm_up/test_screen.dart';
-import 'package:mobile_final/Games/games_model/04_Strenuous/test_screen.dart';
 import 'package:mobile_final/Games/mild_screen.dart';
 import 'package:mobile_final/Games/moderate_screen.dart';
 import 'package:mobile_final/Games/strenuous_screen.dart';
-
 
 class gameEx extends StatefulWidget {
   const gameEx({Key? key}) : super(key: key);
@@ -71,10 +68,9 @@ class _gameExState extends State<gameEx> {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => const 
-                            // test_screen_W()
-                            mildScreen()
-                            ),
+                            builder: (context) => const
+                                // test_screen_W()
+                                mildScreen()),
                       );
                     },
                     child: Container(
@@ -121,14 +117,12 @@ class _gameExState extends State<gameEx> {
                   SizedBox(height: 30),
                   GestureDetector(
                     onTap: () {
-                      
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => const 
-                            // test_screen_S()
-                            strenuousScreen()
-                        ),
+                            builder: (context) => const
+                                // test_screen_S()
+                                strenuousScreen()),
                       );
                     },
                     child: Container(
@@ -162,4 +156,3 @@ class _gameExState extends State<gameEx> {
     );
   }
 }
-

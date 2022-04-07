@@ -79,8 +79,8 @@ class _PoseDetectorViewState extends State<PoseDetectorView_lunges_moderate> {
     while (_running) {
       await Future<void>.delayed(const Duration(seconds: 1));
       if (playTime >= 25) {
-        // if (poseReps >= 15 ) {
-        if (true) {
+        if (poseReps >= 15 ) {
+        // if (true) {
           _running = false;
           assetsAudioPlayer.stop();
 

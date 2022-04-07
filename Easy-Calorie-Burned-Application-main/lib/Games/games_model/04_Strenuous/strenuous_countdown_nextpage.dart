@@ -34,10 +34,27 @@ class _strenuous_countdown_nextpageState
   int count = 21;
   String goTo = '';
   // final assetsAudioPlayer = AssetsAudioPlayer();
+  String pathgif = "" ,namegif="";
 
   @override
   void initState() {
     super.initState();
+    if (widget.setstep >= 1 && widget.setstep <= 2) {
+            pathgif = "assets/images/lunge.gif";
+            namegif = 'Lunges';
+          }else if (widget.setstep >= 3 && widget.setstep <= 5) {
+            pathgif = "assets/images/squat.gif";
+            namegif = 'Squat';
+          }else if (widget.setstep >= 6 && widget.setstep <= 8) {
+            pathgif = "assets/images/standing.gif";
+            namegif = 'Standing twist';
+          }else if (widget.setstep >= 9 && widget.setstep <= 12) {
+            pathgif = "assets/images/plank.gif";
+            namegif = 'Elbow plank';
+          }else if (widget.setstep >= 13 && widget.setstep <= 15) {
+            pathgif = "assets/images/Benside.gif";
+            namegif = 'Bend side';
+          }
     audioTokc();
     autoCount();
   }
@@ -323,13 +340,43 @@ class _strenuous_countdown_nextpageState
     return Scaffold(
       body: goTo == ''
           ? Center(
-              child: Text(
-              '${(count - 1).toString()}',
-              style: TextStyle(
-                color: Colors.red[300],
-                fontSize: 90,
-                fontWeight: FontWeight.bold,
-              ),
+              child: Column(
+                children: [
+                  SizedBox(
+                    height: 120,
+                  ),
+                  Container(
+                    child: Text(
+                      '${(namegif)}',
+                      style: TextStyle(
+                        color: Colors.red[300],
+                        fontSize: 30,
+                        // fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  // Container(
+                  //   Image.asset("${pathgif}",height: 100,width: 150,),
+                  // ),
+                  Image.asset("${pathgif}",width: 220,),
+                  SizedBox(
+                    height: 50,
+                  ),
+                  Container(
+                    child: Text(
+                      '${(count - 1).toString()}',
+                      style: TextStyle(
+                        color: Colors.red[300],
+                        fontSize: 90,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    )
+                  ),
+                  
+                ],
             ))
           : Center(
               child: Text(

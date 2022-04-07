@@ -62,11 +62,10 @@ class _PoseDetectorViewState extends State<PoseDetectorView_bend_side> {
   Future assAudio() async {
     int ci = Random().nextInt(4);
     assetsAudioPlayer.open(
-      Audio("assets/audio/NCS_mix_20_0${ci+2}.mp3"),
-      loopMode:LoopMode.single,
+      Audio("assets/audio/NCS_mix_20_0${ci + 2}.mp3"),
+      loopMode: LoopMode.single,
     );
     assetsAudioPlayer.play();
-
   }
 
   Future findUid() async {

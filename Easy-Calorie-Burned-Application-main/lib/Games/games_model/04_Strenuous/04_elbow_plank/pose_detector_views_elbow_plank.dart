@@ -80,8 +80,8 @@ class _PoseDetectorViewState extends State<PoseDetectorView_elbow_plank> {
     while (_running) {
       await Future<void>.delayed(const Duration(seconds: 1));
       if (playTime >= 45) {
-        if (true) {
-          // if (poseReps >= 0) {
+        // if (true) {
+          if (poseReps >= 0) {
           _running = false;
           assetsAudioPlayer.stop();
 
