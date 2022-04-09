@@ -78,8 +78,6 @@ class _strenuous_showscoreState extends State<strenuous_showscore> {
     findScore();
   }
 
-  
-
   Widget build(BuildContext context) {
     return WillPopScope(
       onWillPop: () async {
@@ -149,9 +147,9 @@ class _strenuous_showscoreState extends State<strenuous_showscore> {
                             width: 30,
                           ),
                           Expanded(
-                            flex: 5,
+                            flex: 7,
                             child: Text(
-                              "${playTime}",
+                              "${(playTime * 1 / 60).toInt()}.${playTime - (((playTime * 1 / 60).toInt()) * 60)}",
                               style: TextStyle(
                                   color: Colors.brown[900],
                                   fontSize: 40,
@@ -164,7 +162,7 @@ class _strenuous_showscoreState extends State<strenuous_showscore> {
                           Expanded(
                               flex: 6,
                               child: Text(
-                                "วินาที",
+                                "นาที",
                                 style: TextStyle(
                                     fontSize: 35, fontWeight: FontWeight.bold),
                               )),
@@ -183,7 +181,8 @@ class _strenuous_showscoreState extends State<strenuous_showscore> {
                           Navigator.pushAndRemoveUntil(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => const MainScreen()),(Route<dynamic> route) => false);
+                                  builder: (context) => const MainScreen()),
+                              (Route<dynamic> route) => false);
                         },
                         child: Text(
                           "กลับสู่หน้าหลัก",

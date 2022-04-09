@@ -306,11 +306,11 @@ class _moderateScreenState extends State<moderateScreen> {
                   context,
                   MaterialPageRoute(
                       builder: (context) => const
-                          // PoseDetectorView_elbow_plank(
-                          //   setStep: 12,
+                          PoseDetectorView_elbow_plank(
+                            setStep: 12,
                           // PoseDetectorView_bend_side(
-                          warm_countdown_nextpage(
-                            activitygame: "moderate",
+                          // warm_countdown_nextpage(
+                          //   activitygame: "moderate",
                           )),
                 );
               },

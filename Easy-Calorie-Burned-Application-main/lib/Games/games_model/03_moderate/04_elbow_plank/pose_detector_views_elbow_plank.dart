@@ -63,7 +63,7 @@ class _PoseDetectorViewState extends State<PoseDetectorView_elbow_plank> {
     int ci = Random().nextInt(4);
     assetsAudioPlayer.open(
       Audio("assets/audio/NCS_mix_20_0${ci + 2}.mp3"),
-      loopMode:LoopMode.single,
+      loopMode: LoopMode.single,
     );
     assetsAudioPlayer.play();
   }
@@ -117,9 +117,10 @@ class _PoseDetectorViewState extends State<PoseDetectorView_elbow_plank> {
   Future movePage() async {
     while (_running) {
       await Future<void>.delayed(const Duration(seconds: 1));
-      if (playTime >= 30) {
-        // if (true) {
-          if (poseReps >= 0) {
+      // if (playTime >= 30) {
+      if (playTime >= 5) {
+        if (true) {
+          // if (poseReps >= 0) {
           _running = false;
           assetsAudioPlayer.stop();
 
@@ -138,14 +139,14 @@ class _PoseDetectorViewState extends State<PoseDetectorView_elbow_plank> {
 
           // sum time send to next class
           playTime += widget.getplaytime;
-          // playTime = 20;
-          // _sumScore = 181;
+          playTime = 687;
+          _sumScore = 181;
 
           num sumplayTime = playTime;
 
           print(
               "##############sum04 setstep${widget.setStep}, sumscore= $_sumScore, sumtime =$playTime, timeset = $timeSum, scoreset= $a_sumScore, poseReps= $poseReps");
-
+          
           if (widget.setStep == 12) {
             await FirebaseFirestore.instance
                 .collection('users')

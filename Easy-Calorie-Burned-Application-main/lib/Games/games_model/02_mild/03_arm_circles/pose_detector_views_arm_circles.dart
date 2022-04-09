@@ -106,9 +106,10 @@ class _PoseDetectorViewState extends State<PoseDetectorView_arm_circles> {
   Future movePage() async {
     while (_running) {
       await Future<void>.delayed(const Duration(seconds: 1));
-      if (playTime >= 30) {
-        if (poseReps >= 10) {
-        // if (true) {
+      // if (playTime >= 30) {
+      if (playTime >= 5) {
+        // if (poseReps >= 10) {
+        if (true) {
           _running = false;
           assetsAudioPlayer.stop();
 
@@ -129,8 +130,8 @@ class _PoseDetectorViewState extends State<PoseDetectorView_arm_circles> {
           // sum time send to next class
           playTime += widget.getplaytime;
 
-          // playTime = 116;
-          // _sumScore = 116;
+          playTime = 516;
+          _sumScore = 116;
 
           num sumplayTime = playTime;
 

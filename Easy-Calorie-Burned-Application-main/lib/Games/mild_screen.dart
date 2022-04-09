@@ -220,7 +220,6 @@ class _mildScreenState extends State<mildScreen> {
               child: Container(
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  
                 ),
                 child: Column(
                   children: [
@@ -308,15 +307,15 @@ class _mildScreenState extends State<mildScreen> {
                         builder: (BuildContext context) =>
                             // PoseDetectorView_lunges_mild(
                             // PoseDetectorView_squat(
+                            PoseDetectorView_arm_circles(
+                              setStep: 9,
                             // PoseDetectorView_arm_circles(
-                            //   setStep: 9,
-                              // PoseDetectorView_arm_circles(
-                              //   setStep: 7,
+                            //   setStep: 7,
 
-                              warm_countdown_nextpage(
-                              //     // useClassifier: true,
-                              //     // isActivity: true,
-                            )),
+                            // warm_countdown_nextpage(
+                                //     // useClassifier: true,
+                                //     // isActivity: true,
+                                )),
                     (Route<dynamic> route) => false);
               },
               child: Container(

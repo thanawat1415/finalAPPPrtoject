@@ -98,7 +98,7 @@ class _showRankScreenState extends State<showRankScreen> {
 
   Widget mildRank() {
     return Container(
-      height: 450,
+      height: 400,
       width: 400,
       decoration: BoxDecoration(
           color: Colors.white,
@@ -189,7 +189,7 @@ class _showRankScreenState extends State<showRankScreen> {
 
   Widget moderRank() {
     return Container(
-      height: 450,
+      height: 400,
       width: 400,
       decoration: BoxDecoration(
           color: Colors.white,
@@ -280,7 +280,7 @@ class _showRankScreenState extends State<showRankScreen> {
 
   Widget strenRank() {
     return Container(
-      height: 450,
+      height: 400,
       width: 400,
       decoration: BoxDecoration(
           color: Colors.white,

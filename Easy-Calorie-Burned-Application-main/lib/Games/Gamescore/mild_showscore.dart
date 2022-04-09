@@ -151,9 +151,9 @@ class _mild_showscoreState extends State<mild_showscore> {
                             width: 30,
                           ),
                           Expanded(
-                            flex: 5,
+                            flex: 7,
                             child: Text(
-                              "${playTime}",
+                              "${(playTime*1/60).toInt()}.${playTime-(((playTime*1/60).toInt())*60)}",
                               style: TextStyle(
                                   color: Colors.brown[900],
                                   fontSize: 40,
@@ -166,7 +166,7 @@ class _mild_showscoreState extends State<mild_showscore> {
                           Expanded(
                               flex: 6,
                               child: Text(
-                                "วินาที",
+                                "นาที",
                                 style: TextStyle(
                                     fontSize: 35, fontWeight: FontWeight.bold),
                               )),

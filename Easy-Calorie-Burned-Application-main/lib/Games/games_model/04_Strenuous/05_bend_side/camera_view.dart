@@ -27,12 +27,13 @@ class _CameraViewState extends State<CameraView> {
 
   // 1: front cam
   // 0: rear cam
-  int _cameraIndex = 1;
+  int _cameraIndex = 0;
 
   @override
   void initState() {
     super.initState();
     _startLiveFeed();
+    
   }
 
   @override
