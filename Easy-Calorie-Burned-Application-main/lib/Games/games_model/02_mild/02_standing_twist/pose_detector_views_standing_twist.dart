@@ -80,7 +80,7 @@ class _PoseDetectorViewState extends State<PoseDetectorView_standing_twist> {
       await Future<void>.delayed(const Duration(seconds: 1));
       if (playTime >= 15) {
         // if (true) {
-          if (poseReps >= 10) {
+          if (poseReps >= 7) {
           _running = false;
           assetsAudioPlayer.stop();
 

@@ -76,7 +76,7 @@ class _PoseDetectorViewState extends State<PoseDetectorView_standing_twist> {
       await Future<void>.delayed(const Duration(seconds: 1));
       if (playTime >= 30) {
         // if (true) {
-          if (poseReps >= 0) {
+          if (poseReps >= 15) {
           _running = false;
           assetsAudioPlayer.stop();
 
@@ -84,7 +84,7 @@ class _PoseDetectorViewState extends State<PoseDetectorView_standing_twist> {
           int _sumScore = widget.scoreSum;
 
           // rep * timeset/playtime*difficulty
-          int a_sumScore = poseReps * 15 * 3;
+          int a_sumScore = poseReps * 30 * 3;
           a_sumScore ~/= timeSum;
           _sumScore += a_sumScore;
 

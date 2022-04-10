@@ -100,8 +100,8 @@ class _PoseDetectorViewState extends State<PoseDetectorView_bend_side> {
   Future movePage() async {
     while (_running) {
       await Future<void>.delayed(const Duration(seconds: 1));
-      // if (playTime >= 60) {
-        if (playTime >= 5) {
+      if (playTime >= 60) {
+        // if (playTime >= 5) {
         if (true) {
           // if (poseReps >= 0) {
           _running = false;
@@ -123,8 +123,8 @@ class _PoseDetectorViewState extends State<PoseDetectorView_bend_side> {
           // sum time send to next class
           playTime += widget.getplaytime;
 
-          playTime = 827;
-          _sumScore = 315;
+          // playTime = 827;
+          // _sumScore = 315;
 
           num sumplayTime = playTime;
 
