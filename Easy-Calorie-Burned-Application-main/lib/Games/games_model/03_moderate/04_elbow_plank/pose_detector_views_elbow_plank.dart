@@ -117,7 +117,7 @@ class _PoseDetectorViewState extends State<PoseDetectorView_elbow_plank> {
   Future movePage() async {
     while (_running) {
       await Future<void>.delayed(const Duration(seconds: 1));
-      if (playTime >= 30) {
+      if (playTime >= 100) {
       // if (playTime >= 5) {
         if (true) {
           // if (poseReps >= 0) {

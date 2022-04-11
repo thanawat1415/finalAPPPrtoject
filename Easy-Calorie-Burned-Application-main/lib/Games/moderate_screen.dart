@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:mobile_final/Games/Gamescore/moderate_showScore.dart';
 import 'package:mobile_final/Games/games_model/01_warm_up/warm_countdown_nextpage.dart';
 import 'package:mobile_final/Games/games_model/03_moderate/04_elbow_plank/pose_detector_views_elbow_plank.dart';
+import 'package:mobile_final/Games/games_model/03_moderate/moderate_countdown_nextpage.dart';
 
 import 'games_model/04_Strenuous/05_bend_side/pose_detector_views_bend_side.dart';
 
@@ -309,8 +310,10 @@ class _moderateScreenState extends State<moderateScreen> {
                           // PoseDetectorView_elbow_plank(
                           //   setStep: 12,
                           // PoseDetectorView_bend_side(
-                          warm_countdown_nextpage(
-                            activitygame: "moderate",
+                          // warm_countdown_nextpage(
+                          //   activitygame: "moderate",
+                          moderate_countdown_nextpage(
+                            setstep: 11,
                           )),
                 );
               },
