@@ -307,12 +307,12 @@ class _mildScreenState extends State<mildScreen> {
                         builder: (BuildContext context) =>
                             // PoseDetectorView_lunges_mild(
                             // PoseDetectorView_squat(
-                            // PoseDetectorView_arm_circles(
-                            //   setStep: 9,
+                            PoseDetectorView_arm_circles(
+                              setStep: 9,
                             // PoseDetectorView_arm_circles(
                             //   setStep: 7,
 
-                            warm_countdown_nextpage(
+                            // warm_countdown_nextpage(
                                 //     // useClassifier: true,
                                 //     // isActivity: true,
                                 )),

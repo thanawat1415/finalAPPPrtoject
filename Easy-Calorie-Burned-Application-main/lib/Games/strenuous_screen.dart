@@ -312,10 +312,10 @@ class _strenuousScreenState extends State<strenuousScreen> {
                       builder: (context) => const
                           //  PoseDetectorView_elbow_plank(
                           //    setStep: 11,
-                          // PoseDetectorView_bend_side(
-                          //   setStep: 15,
-                          warm_countdown_nextpage(
-                            activitygame: "strenuous",
+                          PoseDetectorView_bend_side(
+                            setStep: 15,
+                          // warm_countdown_nextpage(
+                            // activitygame: "strenuous",
                           )),
                 );
                 // Navigator.push(context, MaterialPageRoute(builder: (context)=> const mildScreen()),);
